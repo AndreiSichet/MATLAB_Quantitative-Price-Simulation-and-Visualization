@@ -1,8 +1,8 @@
 function avgPnL = backtest3D(S, strategyFunc, params, initialCapital)
-% S = (N+1) x M matrix cu toate simulările
+% S = (N+1) x M matrix with all simulations
 % strategyFunc = @strategy_SMA / @strategy_EMA / @strategy_RSI
-% params = struct cu parametrii strategiei
-% initialCapital = suma initiala pentru backtest
+% params = struct with strategy params
+% initialCapital = initial sum for backtest
 
 [N, M] = size(S);
 avgPnL = 0;
